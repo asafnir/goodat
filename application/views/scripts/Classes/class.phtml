@@ -1,0 +1,36 @@
+<?php $this->layout()->setLayout('users'); ?>
+
+
+<div class="left-column">
+	<div class="class-detailes">
+		<div class="class-inner">
+			<h1><?php echo $this->escape($this->class['title']); ?></h1>
+			<h3>location: <?php echo $this->escape($this->class['location']);?></h2>
+			<p></p>
+			<h2>description</h2>
+			
+			<h3><?php echo $this->escape($this->class['description']);?></h3>		
+		</div>
+	</div>
+</div>
+
+<div class="right-column">
+	<div class="paymant-box">
+		<div class="class-pay"><h2>$8.00</h2></div>
+		<div class="class-date">26.3.2013</div>
+	</div>
+	
+	<div class="map-box">
+		<h1>google map api</h1>
+	</div>
+	
+	<div class="user-box">
+		<h2>Class teacher</h2>
+		<div id="image-container"><img></div>
+		<div id=teacher-name"></div>
+	</div>
+	
+</div>
+
+
+

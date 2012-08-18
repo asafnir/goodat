@@ -1,0 +1,43 @@
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Goodat');
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/main.css'); ?>
+   
+</head>
+<body>
+	<div class="container">
+		
+		<div id="header">
+			<div id="logo">
+				<a href="/users">
+					<img src="/img/slogo.png">
+				</a>
+			</div>
+			<div id="main-nav">
+				<ul>
+					<li class=""><a href="/teach">Teach your skill</a></li>
+					<li class=""><a href="/learn">Learn from others</a></li>
+				</ul>
+			</div>
+			<div id="users-nav">
+				<ul>
+					<li><?php echo $this->loggedUser() ?></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="grid-wrapper">
+				<?php echo $this->layout()->content; ?>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

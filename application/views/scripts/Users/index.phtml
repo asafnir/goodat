@@ -1,0 +1,23 @@
+<?php $this->layout()->setLayout('users'); ?>
+<div  class="intro-left">
+	<h1>Look for someone who is good at...</h1>
+	<h3>
+		Looking for someone who can help you solve a problem?
+		<br>
+		Start searching for people who are good at:
+	</h3>
+	<div class="chg-header-search">
+		<a id="submit" class="search-btn" href="#"><span class="icn-magnify">search</span></a>		
+		<form class="goodat-search" action="/search" onsubmit="return false">
+			<input id="header_autocomplete" data-loggable="header-search" type="text" class="chg-header-search-input" name="search_by" placeholder="Search for book or course" autocomplete="off" style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; ">
+		</form>
+	</div>
+</div>
+
+<div class="intro-right">
+	<div class="teachImage">
+		<img src="/img/handywbg.jpg">
+	</div>
+</div>
+
+

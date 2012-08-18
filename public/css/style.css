@@ -1,0 +1,151 @@
+body{
+    font-size: 13px;
+    color: #333;
+    background: white;
+    font-family: "Helvetica Neue",Arial,Helvet;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 600px;
+}
+
+#content {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.gradientContent{
+    margin: 0 auto;
+    width: 980px;
+    padding: 30px;
+}
+
+.login-button{
+    border: 1px solid #E1E1E1;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 13px;
+    color: #A0A0A0;
+    display: block;
+    font-weight: bold;
+    padding: 5px 24px 6px 12px;
+    position: absolute;
+    top: 23px;
+    right: 17px;
+    z-index: 1;
+}
+/*right side index
+ * 
+ */
+.feature-right{
+    width: 550px;
+    float: right;
+}
+.goodatImage{
+    background: url('/img/background_ill.png') no-repeat;
+    height: 607px;
+}
+
+/*left side index
+ * 
+ */
+.feature-left{
+    padding: 43px 15px 0 0;
+    width: 383px;
+    float: left;
+}
+
+.feature-left .logo{
+    background: url('/img/logo.png') no-repeat;
+    margin-bottom: 25px;
+    text-indent: -999em;
+    width: 300px;
+    height: 87px;
+}
+
+.description{
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 28px;
+}
+
+.register-container{
+    margin-bottom: 14px;
+    position: relative;
+    width: 217px;
+    height: 48px;
+}
+
+.register-button{
+    background: url('/img/regbutton.png') no-repeat;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 161.6%;
+    font-weight: bold;
+    text-decoration:none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.66);
+    padding: 13px 15px 14px;
+    width: 187px;
+    height: 21px;
+}
+
+/*register page*/
+.mainRegContainer{
+    width: 500px;
+    margin: 0; 
+    padding: 50px;
+}
+.mainRegContainer h1{
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 6px;
+    color:#60B0EE;
+}
+
+.mainRegContainer h3{
+    padding: 15px 0 10px;
+    color:#A0A0A0;
+}
+.reg-content{
+   
+}
+
+
+
+/* style form */
+dl{
+    margin: 0;
+    padding: 0;
+}
+dt{
+    margin: 0;
+    padding: 0;
+}
+
+#register{
+    position: relative;
+    
+}
+.optional{
+    font-size: 20px;
+    color: #666;
+    letter-spacing: -1px;
+    font-weight: bold;
+    left: 1px;
+    position: relative;
+    padding: 37px;
+}
+   
+.formTextElement{
+    width: 324px;
+    border: 1px solid #D5D5C5;
+    line-height: 40px;
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: -1px;
+    background: #F5F5E5;
+    color: #664;
+}
