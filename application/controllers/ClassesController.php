@@ -13,7 +13,11 @@ class ClassesController extends Zend_Controller_Action {
     	$class=$classes->getClass($id);
     	$this->view->class = $class;
     	$userid=$class['userid'];
-    
+    	$users= new Application_Model_Users_Table();
+    	$user=$users->getUser($userid);
+    	$this->view->user = $user;
+    	
+    	
     	
     }
     

@@ -1,0 +1,39 @@
+db info[
+		resources.db.adapter = Pdo_Mysql
+		resources.db.params.host = localhost
+		resources.db.params.username = root
+		resources.db.params.password = 3dmax
+		resources.db.params.dbname = goodat
+		]
+
+User Table[		
+			CREATE TABLE IF NOT EXISTS `users` (
+				`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				`username` varchar(30) DEFAULT NULL,
+				`password` varchar(40) DEFAULT NULL,
+				`name` varchar(20) DEFAULT NULL,
+				`email` varchar(100) DEFAULT NULL,
+				`goodat` varchar(100) DEFAULT NULL,
+				PRIMARY KEY (`id`)
+				) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+			]
+			
+Classes Table[
+				CREATE TABLE classes (
+					id int(11) NOT NULL auto_increment,
+					title varchar(100) NOT NULL,
+					category int(11) NOT NULL,
+					description varchar(100) NOT NULL,
+					location varchar(100) NOT NULL,
+					userid int(11) NOT NULL,
+					PRIMARY KEY (id)
+				);
+			]
+Category Table[
+				CREATE TABLE category (
+					id int(11) NOT NULL auto_increment,
+					name varchar(100) NOT NULL,
+					order int(11) NOT NULL,
+					PRIMARY KEY (id)
+					);
+				]

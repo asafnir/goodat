@@ -23,4 +23,18 @@ class Application_Model_Users_Table extends Zend_Db_Table_Abstract {
  
         return $user;
     }
+    
+    public function updateUser(){
+    	
+    }
+    
+    public function getUser($id)
+    {
+    	$id = (int)$id;
+    	$row = $this->fetchRow('id = ' . $id);
+    	if (!$row) {
+    		throw new Exception("Could not find row $id");
+    	}
+    	return $row->toArray();
+    }
 }
